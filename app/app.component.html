@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+    <h1>GIT!</h1>
+</div>
+<div>
+    <ul class="list-group">
+
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Descripci&oacute;n</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let comando of listaComandos">
+                    <td>{{comando.nombre}}</td>
+                    <td>{{comando.descripcion}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ul>
+</div>
