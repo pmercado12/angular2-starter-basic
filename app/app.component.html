@@ -14,7 +14,17 @@
             <tbody>
                 <tr *ngFor="let comando of listaComandos">
                     <td>{{comando.nombre}}</td>
-                    <td>{{comando.descripcion}}</td>
+                    <td>{{comando.descripcion}}
+                        <br>
+                        <ul class="list-group">
+                            <li *ngFor="let subcomando of comando.subcomandos" class="list-group-item">
+                                <b>
+                                    {{subcomando.nombre}} &nbsp;
+                                </b>
+                                {{subcomando.descripcion}}
+                            </li>
+                        </ul>
+                    </td>
                 </tr>
             </tbody>
         </table>
